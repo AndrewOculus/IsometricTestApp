@@ -82,7 +82,7 @@ public class GameManager : MonoBehaviour {
 			GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
 			cube.transform.position = new Vector3(i - GridSize/2.0f, 0.5f, i - GridSize/2.0f);
 			cube.tag = CubeTag;
-			_field [i, i] = true;
+			_field [i-1, i-1] = true;
 		}
 	}
 
